@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --lavender: #e6e6fa;
+  --blue: #0fa6e2;
+  --green: #74a736;
+  --darker-green: #648939;
+  --white: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right bottom, var(--blue), var(--green));
+  font-family: "Outfit", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 21em;
+  height: 50vh;
+  background: url("images/landscape.svg") no-repeat center/cover;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.top {
+  text-align: center;
+}
+
+.top h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2.3rem;
+  color: var(--white);
+  line-height: 2.2;
+}
+
+.top input,
+.top button {
+  display: block;
+  width: 90%;
+  margin: 0.25em auto;
+  padding: 0.8em;
+  border: none;
+  outline: none;
+}
+
+.top input {
+  background-color: var(--lavender);
+  border-radius: 10px 0 10px 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.top input::placeholder {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.top button {
+  background: var(--green);
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.7em;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.top button:hover,
+.top button:focus {
+  background: var(--darker-green);
+}
+
+.top .error {
+  font-size: 0.8rem;
+}
+
+section {
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-shadow: 1px 1px var(--green);
+}
+
+.icon {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.location {
+  margin: 0.5em 0;
+}
+
+.current {
+  width: 100%;
+  position: relative;
+  padding-top: 0.5em;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.current::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1em;
+  width: 85%;
+  height: 2px;
+  background-color: var(--lavender);
+}
