@@ -30,7 +30,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 21em;
-  height: 50vh;
+  height: 34em;
   background: url("images/landscape.svg") no-repeat center/cover;
   border-radius: 10px;
   overflow: hidden;
@@ -124,3 +124,9 @@ section {
   height: 2px;
   background-color: var(--lavender);
 }
+
+/* @media (min-width: 1920px) {
+  .main-container {
+    max-height: 50vh;
+  }
+} */
